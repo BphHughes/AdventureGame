@@ -1,0 +1,103 @@
+using System;
+
+namespace ChooseYourOwnAdventure
+{
+  class Program
+  {
+      static void Main(string[] args)
+    {
+      /* THE MYSTERIOUS NOISE */
+
+     
+      Console.Write("What is your name?: ");
+      string name = Console.ReadLine();
+      Console.WriteLine($"\nHello, {name}! Welcome to our story.\n\nIt begins on a cold, rainy night. You're sitting in your room flicking through Netflix, eating supermarket brand Cheerios out the packet, and picking your nose without thinking about it because you're a digusting whore, {name}. But that's OK because you're home alone and no one can judge you. All of a sudden, you hear a noice coming from down the hall. \n\nDo you go investigate?\n");
+
+Console.Write("Type YES or NO: ");
+Start:
+string noiseChoice = Console.ReadLine().ToUpper();
+
+if (noiseChoice == "NO")
+{
+  Console.WriteLine("\nAlright chicken, sit in your room all night. \nSee if I care.");
+  goto End;
+}
+else if (noiseChoice == "YES")
+{
+  Console.WriteLine("\nYou walk into the hallway and peer through the darkness. You fumble for the light switch before realising that it is at the OTHER end of the hallway. Who builds a house like this? Madness. Regardless, you walk out. \n\nYou stop suddenly when you see a light coming from under the door down the hall. You thought no one else was home? \n\nYou walk towards it, slowly. Your hand is outstretched. And shaking. \n\nDo you open the door? Or knock?\n");
+}
+else 
+{
+  Console.WriteLine("\nBabe, it was a choice of two. Type Yes or No: ");
+  goto Start;
+}
+
+Door:
+Choice:
+
+Console.Write("Type OPEN or KNOCK:\n");
+string doorChoice = Console.ReadLine().ToUpper();
+
+
+
+
+
+if (doorChoice == "KNOCK")
+{
+Console.WriteLine("How polite of you. \n\nA deep, guttural voice from behind the door speaks. It says \n\n \"Answer this riddle: Poor people have it. Rich people need it. If you eat it you die. What is it?\" \n\n Half of you is tempted to tell his voice to go fuck itself but you hold back. Part of you knows that this dude means business and his voice was commanding. Plus, he was in your house - who knows he could be dangerous?? Also, you love riddles.\n\nYou muse in thought for a second.");
+}
+else if (doorChoice == "OPEN")
+{
+Console.WriteLine("\nThe door is locked. See if one of your three keys (Look, they're hanging by the door) will open it.");
+
+keyPick:
+Console.Write("Enter a number (1-3): ");
+ string key = Console.ReadLine();
+
+switch (key)
+{
+case "1":
+  Console.WriteLine("It fits. \n\nYou turn the key in the lock and the seconds tick by slowly. A bead of sweat drips down your forehead. The lock clicks.\nYou turn the handle.You push open the door.\nAs it pulls away from you, you start to realise your mistake.\nA thick wave of gaseous evil erupts from inside the room and you start to choke. Oxygen. You need oxygen. You hold you hands in front of your face to cover your eyes as the bright, hot light spills out and starts to melt your eyeballs. The last thing you hear as you fall to your knees is a harpy scream that shrills the night air, surrounds your ears and burns your heart. \n\nYa dead, son. But I told you before - stop opening the door when you're girlfriend is on the toilet.");
+  goto End;
+  //break;
+case "2": case "3":
+  Console.WriteLine("Nuh uh. Try a different key.");
+  goto keyPick;
+  //break;
+default:
+  Console.WriteLine("BRUH! You've like three options, pick 1, 2 or 3...");
+  goto keyPick;
+  //break;
+}
+
+}
+else {
+  Console.WriteLine("\nBabe, honestly, this shouldn't be hard. There's like two options.");
+  goto Choice;
+}
+
+Console.Write("\nType your answer: ");
+string riddle = Console.ReadLine();
+
+string riddleAns = riddle.ToLower();
+//Console.Write(riddleAns);
+
+if (riddleAns == "nothing")
+{
+  Console.WriteLine("\n\"YOU ARE CORRECT\" booms that big ass voice from behind the door. Having answered this riddle correctly you find yourself gaining in confidence. Who is this riddly mofo hiding out in your house? Why would you knock in your OWN house? \nDO YOU OPEN THE DOOR?");
+  goto Door;
+}
+else
+{
+  Console.WriteLine("\nWrong answer. Sorry. End of the adventure for you. You go back to your room with your metaphorical tail between your legs. Defeated. Guess you'll never know what that was all about.");
+}
+
+
+End:
+Console.WriteLine("\nThe End.");
+    }
+  }
+}
+
+
+
