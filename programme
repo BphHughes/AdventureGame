@@ -28,7 +28,7 @@ else if (noiseChoice == "YES")
 }
 else 
 {
-  Console.WriteLine("\nBabe, it was a choice of two. Type Yes or No: ");
+  Console.WriteLine("\nSo, it was a choice of two. Type Yes or No: ");
   goto Start;
 }
 
@@ -57,7 +57,7 @@ Console.Write("Enter a number (1-3): ");
 switch (key)
 {
 case "1":
-  Console.WriteLine("It fits. \n\nYou turn the key in the lock and the seconds tick by slowly. A bead of sweat drips down your forehead. The lock clicks.\nYou turn the handle.You push open the door.\nAs it pulls away from you, you start to realise your mistake.\nA thick wave of gaseous evil erupts from inside the room and you start to choke. Oxygen. You need oxygen. You hold you hands in front of your face to cover your eyes as the bright, hot light spills out and starts to melt your eyeballs. The last thing you hear as you fall to your knees is a harpy scream that shrills the night air, surrounds your ears and burns your heart. \n\nYa dead, son. But I told you before - stop opening the door when you're girlfriend is on the toilet.");
+  Console.WriteLine("It fits. \n\nYou turn the key in the lock and the seconds tick by slowly. A bead of sweat drips down your forehead. The lock clicks.\nYou turn the handle.You push open the door.\nAs it pulls away from you, you start to realise your mistake.\nA thick wave of gaseous evil erupts from inside the room and you start to choke. Oxygen. You need oxygen. You hold you hands in front of your face to cover your eyes as the bright, hot light spills out and starts to melt your eyeballs. The last thing you hear as you fall to your knees is a harpy scream that shrills the night air, surrounds your ears and burns your heart. \n\nYa dead, son. But I told you before - stop opening the door when someone else is on the toilet.");
   goto End;
   //break;
 case "2": case "3":
@@ -72,7 +72,7 @@ default:
 
 }
 else {
-  Console.WriteLine("\nBabe, honestly, this shouldn't be hard. There's like two options.");
+  Console.WriteLine("\nHonestly, this shouldn't be hard. There's, like, two options.");
   goto Choice;
 }
 
@@ -84,7 +84,7 @@ string riddleAns = riddle.ToLower();
 
 if (riddleAns == "nothing")
 {
-  Console.WriteLine("\n\"YOU ARE CORRECT\" booms that big ass voice from behind the door. Having answered this riddle correctly you find yourself gaining in confidence. Who is this riddly mofo hiding out in your house? Why would you knock in your OWN house? \nDO YOU OPEN THE DOOR?");
+  Console.WriteLine("\n\"YOU ARE CORRECT\" booms that big ass voice from behind the door. Having answered this riddle correctly you find yourself gaining in confidence. Who is this riddly monsterman hiding out in your house? Why would you knock in your OWN house? \nDO YOU OPEN THE DOOR?");
   goto Door;
 }
 else
